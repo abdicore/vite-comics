@@ -9,7 +9,6 @@ import AppFooter from './components/AppFooter.vue' ;
 export default {
   data() {
     return {
-      count: 0
     }
   },
   components:{
@@ -29,6 +28,6 @@ export default {
 
 </template>
 
-<style scoped>
+<style >
 
 </style>

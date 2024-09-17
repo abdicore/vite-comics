@@ -3,7 +3,6 @@
 export default {
   data() {
     return {
-      count: 0
     }
   }
 }
@@ -16,5 +15,8 @@ export default {
 </template>
 
 <style scoped>
+h1 {
+    color: goldenrod;
+}
 
 </style>
