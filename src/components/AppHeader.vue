@@ -3,6 +3,18 @@
 export default {
   data() {
     return {
+        navLinks : [
+            "CHARACTERS",
+            "COMISC",
+            "MOVIE",
+            "TV",
+            "GAMES",
+            "COLLECT",
+            "VIDEO",
+            "FANS",
+            "NEWS",
+            "SHOP"
+        ]
     }
   }
 }
@@ -15,11 +27,10 @@ export default {
     </div>
     <div class="navbar">
         <ul>
-            <li>CHARACTERSD</li>
-            <li>COMICS</li>
-            <li>MOVIE</li>
-            <li>TV</li>
-            <li>GAMES</li>
+            <li v-for="(navItem,index) in navLinks" key="index">
+                {{ navItem }}
+            </li>
+
         </ul>
     </div>
 </header>
@@ -38,6 +49,7 @@ ul {
     display: flex;
 
     li {
+        color: #79797d;
         font-size: 20px;
         margin-right: 20px;
 
