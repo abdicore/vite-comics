@@ -6,6 +6,24 @@ export default {
     return {
     }
   },
+  props:{
+    comicUrl: {
+      require: true,
+      type: String,
+    },
+    comicPrice: {
+      require: true,
+      type: String,
+    },
+    comicSeries: {
+      require: true,
+      type: String,
+    },
+    comicType: {
+      require: true,
+      type: String,
+    },
+  },
   components:{
  
   }
@@ -14,7 +32,9 @@ export default {
 </script>
 
 <template>
-  <p>ComicsCard</p>
+  <li>
+    -- {{ comicSeries }} -- {{ comicPrice }} -- {{ comicType }}
+  </li>
 </template>
 
 <style  scoped>

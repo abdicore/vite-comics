@@ -90,8 +90,14 @@ export default {
 </script>
 
 <template>
-<h1>ComicsList</h1>
-<ComicsCard/>
+    <h1>ComicsList</h1>
+    <ul>
+        <ComicsCard v-for="(Comic, index) in Comics" key="index"
+            :comicUrl="Comic.thumb" :comicPrice="Comic.price" :comicSeries="Comic.series" :comicType="Comic.type"
+        />
+    </ul>
+
+
 
 
 </template>
