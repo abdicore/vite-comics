@@ -1,22 +1,40 @@
 <script>
+import ComicsList from "./ComicsList.vue";
+
 
 export default {
   data() {
     return {
     }
+  },
+  components:{
+    ComicsList,
   }
 }
 </script>
 
 <template>
-<header>
-    <h1>AppMain </h1>
-</header>
+<main>
+    <div class="jumbotron">
+        <img src="../assets/img 7/jumbotron.jpg" alt="">
+    </div>
+    <div class="cards"></div>
+</main>
+<ComicsList/>
+
 </template>
 
 <style scoped>
 h1 {
-    color: goldenrod;
+    color: #ffffff;
+}
+
+.jumbotron {
+    background-size: cover;
+    height: 200px;
+}
+img {
+    height: 200px;
 }
 
 </style>
