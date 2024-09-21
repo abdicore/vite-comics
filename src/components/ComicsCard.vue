@@ -33,21 +33,35 @@ export default {
 
 <template>
   <li>
-    <img :src="comicUrl" :alt="comicSeries">
-    <h3>
-      {{ comicSeries }} 
-    </h3> 
+    <div class="card" >
+      <img :src="comicUrl" :alt="comicSeries">
+      <div class="card-body">
+        <a href="#" class="card-title" >{{ comicSeries }} <br> <span>{{ comicType }}</span></a>
+      </div>
+    </div>
   </li>
 </template>
 
 <style  scoped>
-h1 {
-    font-size: 30px;
+a {
+    text-decoration: none;
+    font-size: 12pxpx;
     color: black;
 }
 
 img {
-  max-height: 100px;
+  height: 230px;
+}
+
+span {
+  font-size: 6pxpx;
+    color: gray;
+}
+
+li{
+  margin-top: 20px;
+  display: flex;
+  flex-basis: calc(100% / 4);
 }
 
 </style>
