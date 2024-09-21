@@ -1,5 +1,4 @@
 <script >
-import ComicsCard from "./ComicsCard.vue";
 
 
 
@@ -9,21 +8,20 @@ export default {
     }
   },
   components:{
-    ComicsCard,
   }
 }
 
 </script>
 
 <template>
-<h1>ComicsList</h1>
-<ComicsCard/>
+<p>BannerList</p>
+<CBannerCard/>
 
 
 </template>
 
 <style  scoped>
-h1 {
+p {
     font-size: 30px;
     color: black;
 }

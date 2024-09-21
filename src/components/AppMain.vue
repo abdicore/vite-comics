@@ -1,5 +1,7 @@
 <script>
 import ComicsList from "./ComicsList.vue";
+import BannerList from "./BannerList.vue";
+
 
 
 export default {
@@ -9,6 +11,7 @@ export default {
   },
   components:{
     ComicsList,
+    BannerList,
   }
 }
 </script>
@@ -21,7 +24,7 @@ export default {
     <div class="cards"></div>
 </main>
 <ComicsList/>
-
+<BannerList/>
 </template>
 
 <style scoped>
