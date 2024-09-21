@@ -1,5 +1,4 @@
 <script >
-import BannerCard from "./BannerCard.vue";
 
 
 
@@ -9,22 +8,18 @@ export default {
     }
   },
   components:{
-    BannerCard,
   }
 }
 
 </script>
 
 <template>
-<h1>BannerList</h1>
-<BannerCard/>
-
+<p>BannerCard</p>
 
 </template>
 
 <style  scoped>
-h1 {
-    font-size: 30px;
+p {
     color: black;
 }
 
