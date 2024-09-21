@@ -1,6 +1,4 @@
 <script >
-import ComicsCard from "./ComicsCard.vue";
-
 
 
 export default {
@@ -9,16 +7,14 @@ export default {
     }
   },
   components:{
-    ComicsCard,
+ 
   }
 }
 
 </script>
 
 <template>
-    <ComicsCard/>
-<h1>ComicsList</h1>
-
+  <p>ComicsCard</p>
 </template>
 
 <style  scoped>
