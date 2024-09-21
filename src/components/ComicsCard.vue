@@ -33,7 +33,10 @@ export default {
 
 <template>
   <li>
-    -- {{ comicSeries }} -- {{ comicPrice }} -- {{ comicType }}
+    <img :src="comicUrl" :alt="comicSeries">
+    <h3>
+      {{ comicSeries }} 
+    </h3> 
   </li>
 </template>
 
@@ -41,6 +44,10 @@ export default {
 h1 {
     font-size: 30px;
     color: black;
+}
+
+img {
+  max-height: 100px;
 }
 
 </style>
